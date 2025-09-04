@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gyakorlás</title>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <div class="row align-item-start">
+        <h1>Broker Account</h1>
+        <form id="broker-form" class="mb-3">
+            <div class="mb-2">
+            <label for="date" class="form-label">Date</label>
+            <input type="date" class="form-control" id="date" name="date" required>
+            </div>
+            <div class="mb-2">
+            <label for="shares" class="form-label">Shares</label>
+            <input type="number" class="form-control" id="shares" name="shares" required>
+            </div>
+            <div class="mb-2">
+            <label for="company" class="form-label">Company</label>
+            <input type="text" class="form-control" id="company" name="company" required>
+            </div>
+            <div class="mb-2 form-check">
+            <input type="checkbox" class="form-check-input" id="dividend" name="dividend">
+            <label for="dividend" class="form-check-label">Dividend</label>
+            </div>
+          <button type="submit" class="btn btn-primary">Buy share</button>
+        </form>
+        <div id="table"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
