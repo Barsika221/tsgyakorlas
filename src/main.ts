@@ -61,7 +61,6 @@ function createTable(data: RetoolData[]): string {
     <tbody>`;
     
   data.forEach(item => {
-    console.log(item);
     table += `
       <tr>
         <td>${new Date(item.date).toLocaleDateString()}</td>
